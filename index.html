@@ -1,0 +1,576 @@
+<style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500");
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-container,
+    .ap-container * {
+        box-sizing: border-box;
+        line-height: 115%;
+    }
+
+    .topAu {
+        height: 0;
+        padding-top: 25%;
+        width: 100%;
+        background-size: 100%;
+    }
+
+    #MainContent_divLP {
+        margin-top: -38px;
+    }
+
+    .ap-container {
+        text-align: center;
+        background: #ffffff;
+        position: relative;
+    }
+
+    .ap-container img {
+        max-width: 67%;
+        margin-top: 25px;
+    }
+
+    .ap-container .ap-navigation {
+        background: #65bae8;
+        color: #fff;
+    }
+
+    .ap-container .ap-navigation a {
+        color: #fff;
+        display: inline-block;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .ap-container .ap-navigation a:hover,
+    .ap-container .ap-navigation a:focus,
+    .ap-container .ap-navigation a:active {
+        background: #65bae8;
+        color: black;
+    }
+
+    .ap-container .ap-navigation a:first-child {
+        background: #65bae8;
+    }
+
+    .ap-container .ap-inner-container {
+        position: relative;
+        padding: 30px 30px 130px;
+    }
+
+    .ap-container .ap-inner-container>div {
+        position: relative;
+        z-index: 1;
+    }
+
+    .ap-container,
+    .ap-container * {
+        color: #231f20;
+    }
+
+    .ap-tagline {
+        font-size: 27.5px;
+        margin-right: 1px;
+        margin-top: 35px;
+        font-family: "Brandon";
+    }
+
+    .ap-container .ap-logo {
+        margin-bottom: 20px;
+    }
+
+    .ap-container .ap-date-time {
+        font-size: 45px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+
+    .ap-container .ap-time {
+        display: inline;
+        color: #65bae8;
+        font-size: 16px;
+        font-family: "Arial Bold";
+    }
+
+    .ap-container .ap-event {
+        display: inline;
+        font-size: 16px;
+        font-family: "Arial Bold";
+    }
+
+    .ap-times-container {
+        display: inline;
+        margin: 0;
+    }
+
+    .ap-times {
+        display: inline;
+        margin: 0;
+    }
+
+    .ap-date-time {
+        margin-bottom: 10px;
+    }
+
+    .ap-times-container {
+        margin-top: 25px;
+    }
+
+    .ap-container .ap-times {
+        display: inline;
+    }
+
+    .ap-container .ap-times .ap-time,
+    .ap-container .ap-times .ap-event {
+        display: inline;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .ap-times-container {
+        margin-top: 1px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+
+    .ap-times-after {
+        display: block;
+        color: #65bae8;
+        font-size: 30px;
+        margin-left: 5;
+        font-style: italic;
+        font-weight: 300;
+        margin-top: 25px;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-header span {
+        color: #65bae8;
+        text-transform: uppercase;
+        font-size: 24px;
+        display: inline-block;
+        height: 7%;
+        background: #fff;
+        position: relative;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-header:before {
+        width: 100%;
+        content: " ";
+        background: #65bae8;
+        height: 3px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+    }
+
+    .ap-featuring {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .ap-featuring-name {
+        font-size: 28px;
+        font-weight: 200;
+        color: #65bae8;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-description {
+        font-size: 15px;
+        font-weight: normal;
+        max-width: 250px;
+        margin: 0 auto 20px;
+        font-family: "Brandon";
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-description img {
+        height: 40px;
+        margin-top: -4px;
+        margin-bottom: -5px;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-bio-button label {
+        display: inline-block;
+        background: #65bae8;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-bio-button label:focus,
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-bio-button label:hover {
+        background: #65bae8;
+    }
+
+    .ap-container .ap-featuring-container .ap-featuring-item .ap-featuring-bio-button label:active {
+        top: 1px;
+    }
+
+    .ap-container .ap-buttons div {
+        display: inline-block;
+        background: #65bae8;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 26px;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-radius: 4px;
+        position: relative;
+        margin: 0 5px 10px;
+    }
+
+    .ap-container .ap-buttons div:focus,
+    .ap-container .ap-buttons div:hover {
+        background: #65bae8;
+    }
+
+    .ap-container .ap-buttons div:active {
+        top: 1px;
+    }
+
+    .ap-container .ap-show-mobile {
+        display: none;
+    }
+
+    .ap-container .ap-featuring-bio-container input {
+        display: none;
+    }
+
+    .ap-container .ap-featuring-bio-container input:checked~.ap-featuring-bio {
+        display: block;
+    }
+
+    .ap-container .ap-featuring-bio-container .ap-featuring-bio {
+        padding: 20px 10px 10px;
+        font-size: 15px;
+        display: none;
+    }
+
+    .ap-container .ap-featuring-bio-container .ap-featuring-bio label {
+        display: none;
+    }
+
+    .ap-bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .ap-location-image {
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .ap-location-image img {
+        max-width: 120px;
+        margin-left: 105px;
+    }
+
+    .ap-location-address {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        border-left: 3px solid #65bae8;
+        margin-top: 22px;
+        padding-left: 10px;
+    }
+
+    .price-title {
+        text-align: left;
+        font-size: 20px;
+        font-family: "Brandon", sans-serif;
+        font-weight: bold;
+        color: #65bae8;
+    }
+
+    .price {
+        display: block;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .button-padding {
+        padding-top: 25px;
+    }
+
+    .ap-buttons {
+        padding-bottom: 25px;
+    }
+
+    .popup-container {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .popup-content {
+        background-color: #fefefe;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        line-height: 1.5;
+        font-size: 15px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .close {
+        color: #aaaaaa;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    @media (max-width: 600px) {
+        .ap-tagline {
+            font-size: 100%;
+            margin-right: 1px;
+            margin-top: 35px;
+            font-family: "Brandon";
+        }
+
+        .ap-container .ap-date-time {
+            font-size: 190%;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .ap-container .ap-time {
+            display: inline;
+            color: #65bae8;
+            font-size: 77%;
+            font-family: "Arial Bold";
+        }
+
+        .ap-container .ap-event {
+            display: inline;
+            font-size: 77%;
+            font-family: "Arial Bold";
+        }
+
+        .ap-container .ap-times .ap-time,
+        .ap-container .ap-times .ap-event {
+            display: inline;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .ap-times-after {
+            display: block;
+            color: #65bae8;
+            font-size: 100%;
+            margin-left: 5;
+            font-style: italic;
+            font-weight: 300;
+            margin-top: 25px;
+        }
+
+        .ap-bottom-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .ap-location-image {
+            text-align: center;
+            padding-right: 10px;
+        }
+
+        .ap-location-image img {
+            max-width: 75px;
+            margin-left: 60px;
+        }
+
+        .ap-location-address {
+            font-size: 10px;
+            text-align: right;
+            padding-top: 2px;
+            padding-bottom: 0px;
+        }
+
+        .price-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+            border-left: 3px solid #65bae8;
+            margin-top: 22px;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+
+        .price-title {
+            text-align: left;
+            font-size: 15px;
+            font-family: "Brandon", sans-serif;
+            font-weight: bold;
+            color: #65bae8;
+        }
+
+        .price {
+            display: block;
+            font-size: 10px;
+            margin-top: 0px;
+            padding-bottom: 1px;
+        }
+    }
+</style>
+
+<div class="ap-container">
+    <div class="ap-navigation">
+        <a href="#">Event Info</a>
+        <a class="btnSteps" id="btnRaffles">Raffle Tickets</a>
+        <a class="btnSteps" id="btnRSVP">Reserve and Sponsor</a>
+        <a href="/Contact.aspx">Contact Us</a>
+    </div>
+    <div class="ap-tagline">FOR WOMEN AND HIGH SCHOOL GIRLS</div>
+    <div class="ap-logo">
+        <img src="https://mikvahchana.com/wp-content/uploads/2023/12/Womens-Annual-Gala-2024-logo.png"
+            alt="Empowering Yourself" />
+    </div>
+    <p class="ap-date-time">Wednesday, February 28, 2024</p>
+    <div class="ap-times-container">
+        <div class="ap-times">
+            <div class="ap-time">6:15PM</div>
+            <div class="ap-event">SPONSOR MEET & GREET</div>
+            <div class="ap-time">7:00PM</div>
+            <div class="ap-event">APPETIZERS</div>
+            <div class="ap-time">8:00PM</div>
+            <div class="ap-event">PRESENTATION</div>
+        </div>
+    </div>
+
+    <div class="ap-times-after">Dessert and raffle to follow</div>
+    <div class="ap-featuring-container">
+        <div class="ap-featuring-item">
+            <div class="ap-featuring-image">
+                <img src="https://mikvahchana.com/wp-content/uploads/2023/12/Aleeza-circle.png" alt="" />
+            </div>
+            <div class="ap-featuring">FEATURING</div>
+            <div class="ap-featuring-name">ALEEZA BEN SHALOM</div>
+            <div class="ap-featuring-description">
+                of Netflix's Jewish Matchmaking
+            </div>
+            <div class="ap-featuring-bio-button">
+                <label for="BioCheckbox1" id="myBtn">View Bio ></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="ap-bottom-container">
+        <div class="ap-location-container"></div>
+        <div class="ap-location-image">
+            <img src="https://mikvahchana.com/wp-content/uploads/2023/11/LifeTown_Logo_Black.png" alt="Lifetown" />
+            <div class="ap-location-address">10 Microlab Rd, Livingston, NJ</div>
+        </div>
+        <div class="price-container">
+            <div class="price-title">Couvert</div>
+            <div class="price"><b>$72</b> Women<b> $36</b> High School Girls</div>
+        </div>
+    </div>
+    <!------------buttons--->
+    <div class="clear"></div>
+
+    <div class='ap-buttons'>
+        <div class="btnSteps" id="btnRaffles">Raffle Only ></div>
+        <div class="btnSteps" id="btnRSVP">RSVP & Raffle ></div>
+    </div>
+    <!--------------end---buttons---->
+
+    <div id="myPopup" class="popup-container">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>
+                Aleeza Ben Shalom is the renowned globe-trotting Jewish Matchmaker,
+                captivating audiences worldwide. With her highly popular Netflix show,
+                "Jewish Matchmaking," reaching millions of viewers across 130 countries
+                and being translated into 37 languages, she has become a true
+                international sensation.
+            </p>
+            </br>
+            <p>
+                Beyond her impressive television career, Aleeza is a multifaceted
+                professional, excelling as a matchmaker, dating coach, speaker, and
+                author. Her books, "Get Real, Get Married: Your Guide to Get over Your
+                Hurdles and under The Chuppah" and "Virtual Dating: Your Guide to
+                Relationships in a Socially Distanced World," have provided invaluable
+                guidance to countless individuals seeking love and companionship.
+            </p>
+            </br>
+            <p>
+                Aleeza's expertise has earned her widespread recognition in the media. Her
+                insightful relationship advice has been sought after by prestigious
+                outlets such as BBC World News, NPR, Rolling Stone, People & Women's
+                Health.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let modal = document.getElementById("myPopup");
+        let btn = document.getElementById("myBtn");
+        let closeBtn = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick = function () {
+            event.preventDefault();
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                event.preventDefault();
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</div>
